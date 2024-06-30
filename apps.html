@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APPS | Truong Pham Blog</title>
+  <meta property="og:image" content="https://down.truongpham.id.vn/img/og_image.jpg">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    var countDown = 5; // Số giây đếm ngược
+
+    // Hàm bắt đầu đếm ngược và chuyển hướng sau khi kết thúc
+    function startCountdown() {
+      var countdownElement = document.getElementById('countdown');
+
+      var countdownInterval = setInterval(function() {
+        countdownElement.textContent = countDown;
+        countDown--;
+
+        if (countDown < 0) {
+          clearInterval(countdownInterval);
+          window.location.href = "https://truongpn-my.sharepoint.com/:f:/g/personal/ad_truongpham_id_vn1/EhQuJy81akpBgaT0XLer22kBG_gyeaC98DCZeosWiH4C4g?e=T4tRsP";
+        }
+      }, 1000); // Thời gian giữa các lần đếm (đơn vị: mili giây)
+    }
+
+    // Bắt đầu đếm ngược khi trang được tải
+    window.onload = function() {
+      startCountdown();
+    };
+  </script>
+</head>  
+  <body>      
+  <section>   
+    <div class="redirect"><p>Sẽ tự động chuyển hướng sau <span id="countdown">5</span> giây.</p></div>
+<footer>
+	<p>&copy; 2024</p>
+	<p>Mail: contact@truongpham.id.vn</p>
+</footer> 
+  </section>
+</body>
+</html>
